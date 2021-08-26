@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+}
+
+.image {
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.logo {
+  transition: all 0.5s;
+}
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.cardContainer {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 31%;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  transition: all 0.5s;
+  height: 300px;
+  justify-content: center;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 3px 2px;
+}
+@media (max-width: 1400px) {
+  .card h3 {
+    font-size: 20px;
+  }
+  .maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1055px) {
+  .card h3 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.line {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #ffc107;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: -30;
+}
+
+.icons ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.icons ul li {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.4;
+}
+.icons ul li:hover {
+  transform: scale(1.05);
+  color: aliceblue;
+}
